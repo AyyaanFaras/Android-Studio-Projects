@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomMenuItemStyle">
+        <item name="android:textColor">@color/firstScreen</item>
+    </style>
+    <style name="MyCustomTextStyle" >
+
+        <item name="android:textSize">20sp</item>     <!-- Text size -->
+        <item name="android:fontFamily">sans-serif-medium</item> <!-- Font -->
+        <item name="android:textStyle">italic</item>  <!-- Text style -->
+    </style>
+    <style name="My2CustomStyle" >
+        <item name="android:textColor">#FF5722</item> <!-- Text color -->
+        <item name="android:textSize">20sp</item>     <!-- Text size -->
+        <item name="android:fontFamily">sans-serif-medium</item> <!-- Font -->
+        <item name="android:textStyle">italic</item>  <!-- Text style -->
+    </style>
+</resources>

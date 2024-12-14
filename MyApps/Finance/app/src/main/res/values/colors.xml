@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="firstScreen">#59a6a0</color>
+    <color name="loginscreem">#eef8f7</color>
+    <color name="navbar">#378a84</color>
+    <color name="custom_hover_color">#FF5733</color>
+    <color name="menu_normal_color">#FFFFFF</color>
+    <color name="linearbackground">#F4F6F6</color>
+</resources>

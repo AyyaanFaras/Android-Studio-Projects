@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Blank">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week"
+            android:id="@+id/week"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="month"
+            android:id="@+id/month"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="year"
+            android:id="@+id/year"/>
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.example.finance.CustomScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/hello"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/less_than_large_text"-->
+            <!--                android:padding="16dp"-->
+            <!--                android:textSize="16sp" />-->
+            <!--            -->
+
+
+            <org.eazegraph.lib.charts.ValueLineChart
+                android:id="@+id/valueLineChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="20dp"
+                android:visibility="gone"
+                app:egCurveSmoothness="0.4"
+                app:egIndicatorShadowColor="#cccccc"
+                app:egIndicatorShadowStrength="3dp"
+                app:egUseCubic="true" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Category Wise Spending"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/categoryWiseSpending"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/fragment_background"-->
+                <!--                    android:minHeight="300dp"-->
+                <!--                    />-->
+                <LinearLayout
+                    android:id="@+id/categoryWiseSpending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fragment_background"
+                    android:orientation="vertical"
+
+                    />
+                <!--                android:minHeight="300dp"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Top Spending"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/topSpending"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:background="@drawable/fragment_background"
+                    android:minHeight="80dp"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Category Wise Income"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/categoryWiseSpending"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/fragment_background"-->
+                <!--                    android:minHeight="300dp"-->
+                <!--                    />-->
+                <LinearLayout
+                    android:id="@+id/categoryWiseIncome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fragment_background"
+                    android:orientation="vertical"
+
+                    />
+
+            </LinearLayout>
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/categoryWiseIncome"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:minHeight="300dp"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:background="@drawable/fragment_background"-->
+            <!--                />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Expense Overview"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/categoryWiseSpending"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/fragment_background"-->
+                <!--                    android:minHeight="300dp"-->
+                <!--                    />-->
+                <LinearLayout
+                    android:id="@+id/stats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fragment_background"
+                    android:orientation="vertical"
+
+                    />
+
+            </LinearLayout>
+
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/PaymentModes"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:minHeight="300dp"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:background="@drawable/fragment_background"-->
+            <!--                />-->
+
+
+            <!--            <LinearLayout-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:padding="10dp">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Payment Mode"-->
+            <!--                    android:textSize="25sp"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:fontFamily="sans-serif-medium"-->
+            <!--                    />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/PaymentModes"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="260dp"-->
+            <!--                    android:background="@drawable/fragment_background"-->
+            <!--                    android:minHeight="300dp"-->
+            <!--                    />-->
+
+            <!--            </LinearLayout>-->
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/PaymentModes"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:minHeight="300dp"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:background="@drawable/fragment_background"-->
+            <!--                />-->
+
+        </LinearLayout>
+    </com.example.finance.CustomScrollView>
+
+</FrameLayout>

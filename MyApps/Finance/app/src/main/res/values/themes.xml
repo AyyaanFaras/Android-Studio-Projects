@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Finance" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/firstScreen</item>
+
+        <item name="android:navigationBarColor">@color/firstScreen</item>
+        <item name="statusBarBackground">@color/firstScreen</item>
+        <item name="colorPrimaryVariant">@color/firstScreen</item>
+    </style>
+
+    <style name="Theme.Finance" parent="Base.Theme.Finance" />
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/white</item>
+    </style>
+</resources>
